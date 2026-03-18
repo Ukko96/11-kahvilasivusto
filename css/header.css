@@ -1,0 +1,102 @@
+header {
+  grid-area: header;
+  position: relative;
+  padding: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/cafe.jpg") center/cover no-repeat;
+  color: white;
+}
+
+header nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--cafe-color);
+  padding: 1rem;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+header nav.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menu-button {
+  display: inline-block;
+}
+
+.closeMenuBtn {
+  display: none;
+}
+
+.menu-button,
+.closeMenuBtn {
+  font-size: 2.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button:hover,
+.closeMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+header nav.open + .closeMenuBtn {
+  display: inline-block;
+}
+
+header .header-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header-title-line:focus-within + .closeMenuBtn + nav {
+  display: block;
+  animation: showMenu 0.5s ease-in-out forwards;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 0.5rem;
+  background-color: var(--theme-color);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+nav li:hover {
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Brew</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <h2>Ota yhteyttä</h2>
+      <p>
+        Haluatko kysyä kahvilastamme, tapahtumistamme tai valikoimastamme? Täytä
+        lomake tai ota yhteyttä alla olevan napin kautta, niin vastaamme
+        mahdollisimman pian.
+      </p>
+      <br>
+      <p>
+        <p>Viestisi käsitellään tietosuojakäytännön mukaisesti. <a href="privacy-policy.html">Tietosuojaseloste</a></p>
+      </p>
+      <br />
+      <form>
+        <h2>Yhteydenottolomake</h2>
+        <br />
+        <ul>
+          <li>
+            <label for="fname">Etunimi</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Etunimesi..."
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="lname">Sukunimi</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Sukunimesi..."
+            />
+          </li>
+          <li>
+            <label for="country">Aihe</label>
+            <select name="aihe" id="aihe">
+              <option value="finland">Tiedustelu</option>
+              <option value="sweden">Tilavaraus</option>
+              <option value="norway">Yhteistyö</option>
+              <option value="norway">Tilaus</option>
+              <option value="norway">Muu aihe</option>
+            </select>
+          </li>
+          <li>
+            <label for="subject">Teksti</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Kerro meille mietteesi..."
+              rows="7"
+            ></textarea>
+          </li>
+          <li class="button">
+            <button type="submit" class="action-btn">✉ Lähetä</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <aside>
+      <ul>
+        <h3>Yhteystiedot</h3>
+        <li>Aurora Brew Lab</li>
+        <li>Kauppapuistikko 18, 65100 Vaasa</li>
+        <li>+358 50 123 4567</li>
+        <li>info@aurorabrew.fi</li>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7222.065671032653!2d21.59885659215612!3d63.093814303541514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d6043ae175f63%3A0x52adb9ff2bf0a6bd!2sKauppapuistikko%2018%2C%2065100%20Vaasa!5e0!3m2!1sfi!2sfi!4v1773794027698!5m2!1sfi!2sfi"
+          width="100%"
+          height="250"
+          style="border: 0"
+          loading="lazy"
+        >
+          referrerpolicy="no-referrer-when-downgrade" ></iframe
+        >
+        <h3>Aukioloajat</h3>
+        <li>Ma–Pe: 08:00–18:00</li>
+        <li>La: 09:00–16:00</li>
+        <li>Su: Suljettu</li>
+        <h3>Some</h3>
+        <li>@aurorabrewlab (Instagram)</li>
+        <li>Aurora Brew Lab (Facebook)</li>
+      </ul>
+    </aside>
+
+    <footer id="footer"></footer>
+    <script src="js/components.js"></script>
+  </body>
+</html>
