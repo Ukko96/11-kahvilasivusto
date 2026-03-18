@@ -263,6 +263,15 @@ main ul {
   margin: 0;
 }
 
+.empty {
+  margin-top: 2rem;
+  padding: 7rem;
+  border: 1px solid #dddddd;
+  color: black;
+  font-size: larger;
+  background-color: rgb(136, 182, 242);
+}
+
 @media (max-width: 768px) {
   h2 {
     font-size: 2.2rem;
